@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/heyheychicken/Watch">
-        <img alt="logo" src="https://raw.githubusercontent.com/HeyHeyChicken/Time-Controller/main/resources/github-logo.gif" width="300">
+        <img alt="logo" src="https://raw.githubusercontent.com/HeyHeyChicken/Time-Controller/main/resources/github-logo.gif" width="400">
     </a>
 <br/>
 
