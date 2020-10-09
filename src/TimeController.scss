@@ -1,0 +1,106 @@
+/*!
+ * Time Controller 1.1.1
+ * https://github.com/HeyHeyChicken/Time-Controller
+ * @license MIT licensed
+ *
+ * Copyright (C) 2020 Duval Antoine (HeyHeyChicken)
+ */
+
+@import "../submodules/SCSS-Mixins/src/SCSS-Mixins";
+
+$gray_800: #424242;
+$white: #FFFFFF;
+$red_500: #F44336;
+
+html{
+  > body{
+    .time-controller{
+      font-family : "Roboto", sans-serif;
+      position: absolute;
+      top : 50%;
+      left : 50%;
+      @include transform(translate(-50%, -50%));
+      width: fit-content;
+      height: 32px;
+      font-size: 18px;
+      padding-top : 34px;
+
+      > input{
+        border : none;
+        height : 0px;
+        width : 0px;
+        padding : 0px;
+        visibility : hidden;
+        opacity : 0;
+        position : absolute;
+      }
+
+      &.center{
+        margin-left: auto;
+        margin-right : auto;
+      }
+
+      > .ruller{
+        width : 100%;
+        padding : 0px 24px;
+        height : 100%;
+
+        $border : 4px;
+        > .cursor{
+          position : absolute;
+          z-index : 2;
+          top : 5px;
+          left : 24px;
+          width : 48px;
+          height : 48px;
+          line-height : 48px - $border * 2;
+          text-align : center;
+          border : $border solid $gray_800;
+          background-color : $white;
+          @include border-radius(50%);
+          cursor : grab;
+          @include transform(translateX(-50%));
+          color : $red_500;
+          box-sizing : border-box;
+          font-weight : bold;
+          z-index : 3;
+
+          &:before{
+            content : "";
+            position : absolute;
+            top : calc(100% + #{$border});
+            left : 50%;
+            @include transform(translateX(-50%));
+            background-color : $red_500;
+            height : 34px - $border;
+            width : 2px;
+            z-index : 2;
+          }
+        }
+
+        > .line{
+          background-color : $gray_800;
+          width : 1px;
+          float : left;
+          z-index : 1;
+
+          &:not(.big):not(.medium) {
+            height : 10px;
+          }
+
+          &.medium {
+            height : 15px;
+          }
+
+          &.big {
+            height : 20px;
+          }
+
+          &:not(:last-child){
+            margin-right : 3px;
+          }
+        }
+      }
+    }
+  }
+}

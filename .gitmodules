@@ -1,0 +1,3 @@
+[submodule "submodules/SCSS-Mixins"]
+	path = submodules/SCSS-Mixins
+	url = https://github.com/HeyHeyChicken/SCSS-Mixins
