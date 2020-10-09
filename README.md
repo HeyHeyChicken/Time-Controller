@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://github.com/heyheychicken/Watch">
+    <a href="https://github.com/HeyHeyChicken/Time-Controller">
         <img alt="logo" src="https://raw.githubusercontent.com/HeyHeyChicken/Time-Controller/main/resources/github-logo.gif" width="400">
     </a>
 <br/>
