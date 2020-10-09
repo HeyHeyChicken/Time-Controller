@@ -1,3 +1,11 @@
+/*!
+ * Time Controller 1.1.1
+ * https://github.com/HeyHeyChicken/Time-Controller
+ * @license MIT licensed
+ *
+ * Copyright (C) 2020 Duval Antoine (HeyHeyChicken)
+ */
+
 let time_controllers = [];
 let cn_index = "data-time-controllers-index";
 $(".time-controller").each(function(y){
